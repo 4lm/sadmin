@@ -8,4 +8,4 @@ class Student(models.Model):
 
 class Course(models.Model):
     name = models.CharField(max_length=60)
-    students = models.ManyToManyField('Student', on_delete=models.CASCADE)
+    students = models.ManyToManyField('Student')
