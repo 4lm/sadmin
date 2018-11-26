@@ -11,7 +11,7 @@ class Student(models.Model):
 
 class Course(models.Model):
     name = models.CharField(max_length=60)
-    students = models.ManyToManyField('Student')
+    students = models.ManyToManyField('Student', blank=True)
 
     def __str__(self):
         return self.name
