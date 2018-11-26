@@ -6,10 +6,6 @@ class StudentForm(ModelForm):
     class Meta:
         model = Student
         fields = '__all__'
-        labels = {
-            'first_name': 'First Name',
-            'last_nane': 'Last Name'
-        }
 
 
 class CourseForm(ModelForm):
@@ -17,5 +13,5 @@ class CourseForm(ModelForm):
         model = Course
         fields = '__all__'
         labels = {
-            'name': 'Course Name'
+            'name': 'Course name'
         }
