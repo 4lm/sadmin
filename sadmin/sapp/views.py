@@ -1,7 +1,5 @@
 from django.contrib import messages
-from django.shortcuts import render
-from django.urls import reverse
-from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
 from .models import Course, Student
 from .forms import StudentForm
 
@@ -14,7 +12,7 @@ def add_student(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Student saved successfully.')
-            return HttpResponseRedirect(reverse('list_courses'))
+            return redirect('list_courses')
         else:
             messages.error(request, 'Input incorrect.')
             pass
