@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'bootstrap4',
+    'django_icons',
     'sapp.apps.SappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
