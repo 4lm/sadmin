@@ -7,10 +7,10 @@ from .forms import StudentForm, CourseForm
 def course_details(request, pk=None):
     if pk is None:
         course = Course()
-        page_title = 'Add new Course'
+        page_title = 'Add new course'
     else:
         course = get_object_or_404(Course, pk=pk)
-        page_title = 'Edit Course'
+        page_title = 'Edit course'
 
     if request.method == 'POST':
         form = CourseForm(request.POST, instance=course)
@@ -30,10 +30,10 @@ def course_details(request, pk=None):
 def student_details(request, pk=None):
     if pk is None:
         student = Student()
-        page_title = 'Add new Student'
+        page_title = 'Add new student'
     else:
         student = get_object_or_404(Student, pk=pk)
-        page_title = 'Edit Student'
+        page_title = 'Edit student'
 
     if request.method == 'POST':
         form = StudentForm(request.POST, instance=student)
