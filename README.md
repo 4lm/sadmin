@@ -6,7 +6,7 @@ Assignment in OOSS, THB, WS18 for creating a "Studierendenverwaltung" in Django
 [This installation manual was tested with a GNU/Linux operating system (Ubuntu 18.04) and might be adjusted for usage with other operating systems]
 
 - First you need Git, Python (>= 3.6) with Virtualenv and Pip installed. If you are under Linux/Mac this should be a no-brainer, if you use Windows and you don't have a Git, Python, Virtualenv and Pip workflow yet, please read this [tutorial](http://timmyreilly.azurewebsites.net/python-pip-virtualenv-installation-on-windows/) for Pip and Virtualenv installation/usage and visit this [link](https://git-scm.com/download/win) do download/install Git.
-- If not already down Install Git, Python (>= 3.6), Pip (normally comes with Python) and Virtualenv
+- If not already downloaded/installed, download/install Git, Python (>= 3.6), Pip (normally comes with Python) and Virtualenv
 - Open the console (aka terminal, shell) on your computer
 - Create a project directory in your terminal
 - CD into your project directory (/path/to/project/)
@@ -18,11 +18,11 @@ git clone https://github.com/4lm/sadmin.git
 ```
 cd sadmin
 ```
-- Create a virtualenv:
+- Create a virtual environment with Virtualenv:
 ```
 virtualenv venv --python=python3.6
 ```
-- Activate virtualenv:
+- Activate the virtual environment:
 ```
 source venv/bin/activate
 ```
